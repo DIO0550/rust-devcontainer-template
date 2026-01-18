@@ -1,11 +1,12 @@
 {
   "name": "Rust Dev Container",
   "dockerComposeFile": "docker-compose.yml",
-  "service": "devcontainer",
+  "service": "rust",
   "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {
       "extensions": [
+        "rust-lang.rust-analyzer",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "GitHub.copilot",
