@@ -12,6 +12,8 @@ RUN apt-get update \
   && chown -R vscode:vscode /workspaces /usr/local/cargo \
   && rm -rf /var/lib/apt/lists/*
 
+RUN curl -fsSL https://gist.githubusercontent.com/DIO0550/1830ced050035c34668aa426f7258346/raw/install-gh.sh | bash
+
 # Node.js公式バイナリをインストール（メジャーバージョンの最新を取得）
 ENV NODE_MAJOR=24
 
