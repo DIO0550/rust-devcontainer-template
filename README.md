@@ -27,24 +27,12 @@ AIツールがプリインストールされたRust開発環境のDev Container�
 - [VS Code](https://code.visualstudio.com/)
 - [Dev Containers拡張機能](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-### 環境変数
-
-以下の環境変数をローカル環境に設定してください：
-
-| 環境変数                       | 説明                                    |
-| ------------------------------ | --------------------------------------- |
-| `GITHUB_PERSONAL_ACCESS_TOKEN` | GitHub Personal Access Token            |
-| `GIT_AUTHOR_NAME`              | Gitコミット時の作者名                   |
-| `GIT_AUTHOR_EMAIL`             | Gitコミット時の作者メールアドレス       |
-| `GIT_COMMITTER_NAME`           | Gitコミット時のコミッター名             |
-| `GIT_COMMITTER_EMAIL`          | Gitコミット時のコミッターメールアドレス |
-
 ### マウント設定
 
 以下のディレクトリがコンテナにマウントされます：
 
 - `~/.codex` → `/home/vscode/.codex`
-- `~/.config/gh` → `/home/node/.config/gh` (読み取り専用)
+- `~/.config/gh` → `/home/vscode/.config/gh` (読み取り専用)
 
 ### 使い方
 
